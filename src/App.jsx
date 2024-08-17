@@ -1,124 +1,124 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Head from "./page/admin/AppBar";
-// import Ok from "./components/Ok";
-// import Login from "routes/login";
-// import Logout from "routes/logout";
-// import Home from "routes/home";
-// import NotFound from "routes/notFound";
-// import Products from "routes/products";
-// import ProductDetails from "routes/products/edit";
-// import ProductCategories from "routes/products/categories";
-// import Customers from "routes/customers";
-// import CustomerDetails from "routes/customers/edit";
-// import CustomerGroups from "routes/customers/groups";
-// import Orders from "routes/orders";
-// import OrderDetails from "routes/orders/edit";
-// import OrderStatuses from "routes/orders/statuses";
-// import Pages from "routes/pages";
-// import PagesDetails from "routes/pages/edit";
-// import Settings from "routes/settings";
-// import Apps from "routes/apps";
-// import Notifications from "routes/notifications";
-// import Files from "routes/files";
-import {
-	blue700,
-	cyan700,
-	pinkA200,
-	grey100,
-	grey300,
-	grey400,
-	white,
-	darkBlack,
-	fullBlack,
-} from "material-ui/styles/colors";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import getMuiTheme from "material-ui/styles/getMuiTheme";
-const muiTheme = getMuiTheme({
-	fontFamily: "Roboto, sans-serif",
-	palette: {
-		primary1Color: blue700,
-		primary2Color: cyan700,
-		primary3Color: grey400,
-		accent1Color: pinkA200,
-		accent2Color: grey100,
-		accent3Color: blue700,
-		textColor: darkBlack,
-		alternateTextColor: white,
-		canvasColor: white,
-		borderColor: grey300,
-		pickerHeaderColor: blue700,
-		shadowColor: fullBlack,
-	},
-	appBar: {},
-});
-const App = () => {
+import HomePage from "./Page/Home/HomePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBarLogin from "./Components/Uitily/NavBarLogin";
+import Footer from "./Components/Uitily/Footer";
+import LoginPage from "./Page/Auth/LoginPage";
+import RegisterPage from "./Page/Auth/RegisterPage";
+import AllCategoryPage from "./Page/Category/AllCategoryPage";
+import AllBrandPage from "./Page/Brand/AllBrandPage";
+import ShopProductsPage from "./Page/Products/ShopProductsPage";
+import ProductDetalisPage from "./Page/Products/ProductDetalisPage";
+import CartPage from "./Page/Cart/CartPage";
+import ChoosePayMethoudPage from "./Page/Checkout/ChoosePayMethoudPage";
+import AdminAllProductsPage from "./Page/Admin/AdminAllProductsPage";
+import AdminAllOrdersPage from "./Page/Admin/AdminAllOrdersPage";
+import AdminOrderDetalisPage from "./Page/Admin/AdminOrderDetalisPage";
+import AdminAddBrandPage from "./Page/Admin/AdminAddBrandPage";
+import AdminAddCategoryPage from "./Page/Admin/AdminAddCategoryPage";
+import AdminAddSubCategoryPage from "./Page/Admin/AdminAddSubCategoryPage";
+import AdminAddProductsPage from "./Page/Admin/AdminAddProductsPage";
+import UserAllOrdersPage from "./Page/User/UserAllOrdersPage";
+import UserFavoriteProductsPage from "./Page/User/UserFavoriteProductsPage";
+import UserAllAddresPage from "./Page/User/UserAllAddresPage";
+import UserAddAddressPage from "./Page/User/UserAddAddressPage";
+import UserEditAddressPage from "./Page/User/UserEditAddressPage";
+import UserProfilePage from "./Page/User/UserProfilePage";
+import AdminEditProductsPage from "./Page/Admin/AdminEditProductsPage";
+import ForgetPasswordPage from "./Page/Auth/ForgetPasswordPage";
+import VerifyPasswordPage from "./Page/Auth/VerifyPasswordPage";
+import RsetPasswordPage from "./Page/Auth/ResetPasswordPage";
+import AdminAddCouponPage from "./Page/Admin/AdminAddCouponPage";
+import AdminEditCouponPage from "./Page/Admin/AdminEditCouponPage";
+import ProtectedRouteHook from "./hook/auth/protected-route-hook";
+import ProtectedRoute from "./Components/Uitily/ProtectedRoute";
+import { useEffect, useState } from "react";
+import ProductsByCategory from "./Page/Products/ProductsByCategory";
+import ProductsByBrand from "./Page/Products/ProductsByBrand";
+function App() {
+	const [isUser, isAdmin, userData] = ProtectedRouteHook();
+
 	return (
-		<Router>
-			<MuiThemeProvider muiTheme={muiTheme}>
-				<div id="container">
-					<div id="headContainer">
-						<Head
-							location={document.location}
-							productCategoryName={"Audio"}
-							productsSelectedCount={9}
-							customersSelectedCount={3}
-							customerGroupName={"The audience"}
-							ordersSelectedCount={4}
-							orderStatusName={"sucess"}
-							orderNumber={10}
+		<div className="font">
+			<NavBarLogin />
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<HomePage />} />
+					<Route path="/login" element={<LoginPage />} />
+					<Route path="/register" element={<RegisterPage />} />
+					<Route path="/allcategory" element={<AllCategoryPage />} />
+					<Route path="/allbrand" element={<AllBrandPage />} />
+					<Route path="/products" element={<ShopProductsPage />} />
+					<Route path="/products/:id" element={<ProductDetalisPage />} />
+					<Route path="/cart" element={<CartPage />} />
+					<Route
+						path="/user/forget-password"
+						element={<ForgetPasswordPage />}
+					/>
+					<Route path="/user/verify-code" element={<VerifyPasswordPage />} />
+					<Route path="/user/reset-password" element={<RsetPasswordPage />} />
+					<Route
+						path="/products/category/:id"
+						element={<ProductsByCategory />}
+					/>
+					<Route path="/products/brand/:id" element={<ProductsByBrand />} />
+
+					<Route element={<ProtectedRoute auth={isAdmin} />}>
+						<Route path="/admin/allorders" element={<AdminAllOrdersPage />} />
+						<Route
+							path="/admin/allproducts"
+							element={<AdminAllProductsPage />}
 						/>
-					</div>
-					{/* <div id="bodyContainer">
-						<Switch>
-							<Route path="/admin/" exact component={Home} />
-							<Route path="/admin/login" component={Login} />
-							<Route path="/admin/logout" component={Logout} />
-							<Route path="/admin/products" exact component={Products} />
-							<Route
-								path="/admin/products/categories"
-								exact
-								component={ProductCategories}
-							/>
-							<Route path="/admin/orders" exact component={Orders} />
-							<Route
-								path="/admin/orders/statuses"
-								exact
-								component={OrderStatuses}
-							/>
-							<Route
-								path="/admin/order/:orderId"
-								exact
-								component={OrderDetails}
-							/>
-							<Route path="/admin/customers" exact component={Customers} />
-							<Route
-								path="/admin/customers/groups"
-								exact
-								component={CustomerGroups}
-							/>
-							<Route
-								path="/admin/customer/:customerId"
-								exact
-								component={CustomerDetails}
-							/>
-							<Route
-								path="/admin/product/:productId"
-								component={ProductDetails}
-							/>
-							<Route path="/admin/pages" exact component={Pages} />
-							<Route path="/admin/pages/add" exact component={PagesDetails} />
-							<Route path="/admin/pages/:pageId" component={PagesDetails} />
-							<Route path="/admin/settings" component={Settings} />
-							<Route path="/admin/apps" component={Apps} />
-							<Route path="/admin/notifications" component={Notifications} />
-							<Route path="/admin/files" exact component={Files} />
-							<Route component={NotFound} />
-						</Switch>
-					</div>*/}
-				</div>
-			</MuiThemeProvider>
-		</Router>
+						<Route
+							path="/admin/orders/:id"
+							element={<AdminOrderDetalisPage />}
+						/>
+						<Route path="/admin/addbrand" element={<AdminAddBrandPage />} />
+						<Route
+							path="/admin/addcategory"
+							element={<AdminAddCategoryPage />}
+						/>
+						<Route
+							path="/admin/addsubcategory"
+							element={<AdminAddSubCategoryPage />}
+						/>
+						<Route
+							path="/admin/addproduct"
+							element={<AdminAddProductsPage />}
+						/>
+						<Route path="/admin/addcoupon" element={<AdminAddCouponPage />} />
+						<Route
+							path="/admin/editcoupon/:id"
+							element={<AdminEditCouponPage />}
+						/>
+						<Route
+							path="/admin/editproduct/:id"
+							element={<AdminEditProductsPage />}
+						/>
+					</Route>
+
+					<Route element={<ProtectedRoute auth={isUser} />}>
+						<Route path="/user/allorders" element={<UserAllOrdersPage />} />
+						<Route
+							path="/order/paymethoud"
+							element={<ChoosePayMethoudPage />}
+						/>
+						<Route
+							path="/user/favoriteproducts"
+							element={<UserFavoriteProductsPage />}
+						/>
+						<Route path="/user/addresses" element={<UserAllAddresPage />} />
+						<Route path="/user/add-address" element={<UserAddAddressPage />} />
+						<Route
+							path="/user/edit-address/:id"
+							element={<UserEditAddressPage />}
+						/>
+						<Route path="/user/profile" element={<UserProfilePage />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
+			<Footer />
+		</div>
 	);
-};
+}
 
 export default App;
