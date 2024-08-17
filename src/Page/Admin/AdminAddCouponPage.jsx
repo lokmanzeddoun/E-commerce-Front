@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AdminAddCoupon from '../../Components/Admin/AdminAddCoupon'
 import AdminSideBar from '../../Components/Admin/AdminSideBar'

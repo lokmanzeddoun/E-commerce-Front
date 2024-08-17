@@ -14,10 +14,10 @@ const RateContainer = ({ rateAvg, rateQty }) => {
         <Container className='rate-container'>
             <Row>
                 <Col className="d-flex">
-                    <div className="sub-tile d-inline p-1 ">التقيمات</div>
+                    <div className="sub-tile d-inline p-1 ">Rates</div>
                     <img className="mt-2" src={rate} alt="" height="16px" width="16px" />
                     <div className="cat-rate  d-inline  p-1 pt-2">{rateAvg}</div>
-                    <div className="rate-count d-inline p-1 pt-2">({`${rateQty}  تقيم`})</div>
+                    <div className="rate-count d-inline p-1 pt-2">({`${rateQty}  rate`})</div>
                 </Col>
             </Row>
 
@@ -25,7 +25,7 @@ const RateContainer = ({ rateAvg, rateQty }) => {
 
             {allReview.data ? (allReview.data.map((review, index) => {
                 return (<RateItem key={index} review={review} />)
-            })) : <h6>لا يوجد تقيمات الان</h6>}
+            })) : <h6>No Rate Yet</h6>}
 
 
             {

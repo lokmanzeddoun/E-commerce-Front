@@ -9,7 +9,7 @@ const BrandContainer = ({ data,loading }) => {
    
     return (
         <Container>
-            <div className="admin-content-text mt-2 ">كل الماركات</div>
+            <div className="admin-content-text mt-2 ">All Brands</div>
             <Row className='my-1 d-flex justify-content-between'>
 
                 {
@@ -18,7 +18,7 @@ const BrandContainer = ({ data,loading }) => {
                             data.map((item, index) => {
                                 return (<BrandCard id={item._id} key={index} img={item.image} />)
                             })
-                        ) : <h4>لا يوجد ماركات</h4>
+                        ) : <h4>No Brands</h4>
                     ) : <Spinner animation="border" variant="primary" />
                 }
 

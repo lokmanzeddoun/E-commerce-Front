@@ -7,7 +7,7 @@ const useGetData = async (url, parmas) => {
 }
 
 
-const useGetDataToken = async (url, parmas) => {
+const useGetDataToken = async (url) => {
     const config = {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     }

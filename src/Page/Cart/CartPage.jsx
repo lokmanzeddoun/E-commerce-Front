@@ -10,14 +10,14 @@ const CartPage = () => {
     return (
         <Container style={{ minHeight: '670px' }}>
             <Row>
-                <div className='cart-title mt-4'>عربة التسوق</div>
+                <div className='cart-title mt-4'> Cart Shopping</div>
             </Row>
             <Row className='d-flex justify-content-center'>
                 <Col xs="12" md="9">
                     {
                         cartItems.length >= 1 ? (cartItems.map((item, index) => {
                             return (<CartItem key={index} item={item} />)
-                        })) : <h6>لا يوجد منتجات فى العربة</h6>
+                        })) : <h6>No Cart Shopping </h6>
                     }
 
                 </Col>

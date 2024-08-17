@@ -1,8 +1,6 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AdminSideBar from '../../Components/Admin/AdminSideBar'
 import AdminAllOrders from '../../Components/Admin/AdminAllOrders'
-import Pagination from '../../Components/Uitily/Pagination'
 const AdminAllOrdersPage = () => {
     return (
         <Container >

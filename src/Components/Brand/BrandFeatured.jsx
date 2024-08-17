@@ -21,7 +21,7 @@ const BrandFeatured = ({ title, btntitle }) => {
                             brand.data.slice(0, 5).map((item, index) => {
                                 return (<BrandCard id={item._id} key={index} img={item.image} />)
                             })
-                        ) : <h4>لا يوجد ماركات</h4>
+                        ) : <h4>No Brands</h4>
                     ) : <Spinner animation="border" variant="primary" />
                 }
             </Row>
