@@ -12,48 +12,82 @@ const Silder = () => {
 		setIndex(selectedIndex);
 	};
 	return (
-		<Carousel activeIndex={index} onSelect={handleSelect}>
-			<Carousel.Item className="slider-background" interval={2000}>
-				<div className="d-flex flex-row justify-content-center align-items-center">
-					<img
-						style={{ height: "500px", width: "70%" }}
-						className=""
-						src={slider4}
-						alt="First slide"
-					/>
-				</div>
-			</Carousel.Item>
-			<Carousel.Item className="slider-background2" interval={2000}>
-				<div className="d-flex flex-row justify-content-center align-items-center">
-					<img
-						style={{ height: "500px", width: "70%" }}
-						className=""
-						src={sliderimg}
-						alt="First slide"
-					/>
-				</div>
-			</Carousel.Item>
+		// <Carousel activeIndex={index} onSelect={handleSelect}>
+		// 	<Carousel.Item interval={2000}>
+		// 		<div className="d-flex flex-row justify-content-center align-items-center">
+		// 			<img
+		// 				style={{ height: "500px", width: "70%" }}
+		// 				className=""
+		// 				src={slider4}
+		// 				alt="First slide"
+		// 			/>
+		// 		</div>
+		// 	</Carousel.Item>
+		// 	<Carousel.Item interval={2000}>
+		// 		<div className="d-flex flex-row justify-content-center align-items-center">
+		// 			<img
+		// 				style={{ height: "500px", width: "70%" }}
+		// 				className=""
+		// 				src={sliderimg}
+		// 				alt="First slide"
+		// 			/>
+		// 		</div>
+		// 	</Carousel.Item>
 
-			<Carousel.Item className="slider-background3" interval={2000}>
-				<div className="d-flex flex-row justify-content-center align-items-center">
-					<img
-						style={{ height: "500px", width: "70%" }}
-						className=""
-						src={prod3}
-						alt="First slide"
-					/>
-				</div>
-			</Carousel.Item>
+		// 	<Carousel.Item  interval={2000}>
+		// 		<div className="d-flex flex-row justify-content-center align-items-center">
+		// 			<img
+		// 				style={{ height: "500px", width: "70%" }}
+		// 				className=""
+		// 				src={prod3}
+		// 				alt="First slide"
+		// 			/>
+		// 		</div>
+		// 	</Carousel.Item>
 
-			<Carousel.Item className="slider-background4" interval={2000}>
-				<div className="d-flex flex-row justify-content-center align-items-center">
-					<img
-						style={{ height: "500px", width: "70%" }}
-						className=""
-						src={prod4}
-						alt="First slide"
-					/>
-				</div>
+		// 	<Carousel.Item  interval={2000}>
+		// 		<div className="d-flex flex-row justify-content-center align-items-center">
+		// 			<img
+		// 				style={{ height: "500px", width: "70%" }}
+		// 				className=""
+		// 				src={prod4}
+		// 				alt="First slide"
+		// 			/>
+		// 		</div>
+		// 	</Carousel.Item>
+		// </Carousel>
+		<Carousel fade className="mt-2">
+			<Carousel.Item className="d-flex flex-row justify-content-center align-items-center">
+				<img
+					style={{ height: "500px", width: "80%" }}
+					className=""
+					src={slider4}
+					alt="First slide"
+				/>
+			</Carousel.Item>
+			<Carousel.Item className="d-flex flex-row justify-content-center align-items-center">
+				<img
+					style={{ height: "500px", width: "80%" }}
+					className=""
+					src={sliderimg}
+					alt="First slide"
+				/>
+			</Carousel.Item>
+			<Carousel.Item className="d-flex flex-row justify-content-center align-items-center">
+				<img
+					style={{ height: "500px", width: "80%" }}
+					className=""
+					src={prod3}
+					alt="First slide"
+				/>
+			</Carousel.Item>
+			<Carousel.Item className="d-flex flex-row justify-content-center align-items-center">
+				<img
+					style={{ height: "500px", width: "80%" }}
+					className=""
+					src={prod4}
+					alt="First slide"
+				/>
 			</Carousel.Item>
 		</Carousel>
 	);
