@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQ" transform="translate(-249.000000, -438.000000)">
+            <g id="Questions" transform="translate(228.000000, 417.000000)">
+                <g id="1">
+                    <g id="Group" transform="translate(20.000000, 19.000000)">
+                        <path d="M31.000186,1.999872 C47.568632,1.999872 61.000064,15.431424 61.000064,31.999872 C61.000064,48.568576 47.568632,62.000128 31.000186,62.000128 C14.43174,62.000128 1.000308,48.568576 1.000308,31.999872 C1.000308,15.431424 14.43174,1.999872 31.000186,1.999872 Z" id="Ellipse" fill="#000000"></path>
+                        <path d="M29.99976,31 L29.99976,23.99984 L31.99988,23.99984 L31.99988,31 L39,31 L39,33 L31.99988,33 L31.99988,40.00014 L29.99976,40.00014 L29.99976,33 L22.99964,33 L22.99964,31 L29.99976,31 Z" id="Combined-shape-1371" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Favorite</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-442.000000, -2169.000000)" fill="#000000">
+            <g id="Featured" transform="translate(229.000000, 1669.000000)">
+                <g id="Products" transform="translate(0.000000, 147.000000)">
+                    <g id="Product-1">
+                        <g id="Add-to-favorites" transform="translate(198.000000, 335.000000)">
+                            <path d="M35.212268,19.859626 C34.057998,18.659988 32.523608,18.000054 30.891068,18.000054 C29.258502,18.000054 27.723436,18.659988 26.569166,19.859626 L25.999688,20.450414 L25.430912,19.859626 C24.276642,18.659988 22.74155,18.000054 21.10901,18.000054 C19.477146,18.000054 17.941378,18.659988 16.787108,19.859626 C14.404078,22.33599 14.404078,26.36474 16.787108,28.840202 L25.327172,37.712758 C25.466402,37.858398 25.640446,37.947432 25.82216,37.981686 C25.882714,37.994226 25.943996,37.999748 26.005252,37.999748 C26.246818,37.999748 26.489112,37.90429 26.67288,37.712758 L35.212268,28.840202 C37.596,26.36474 37.596,22.33599 35.212268,19.859626 Z" id="Favorite"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Ellipse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M30.999984,16.000032 C39.284568,16.000032 45.999936,22.715648 45.999936,30.999872 C45.999936,39.284416 39.284568,46.000032 30.999984,46.000032 C22.715433,46.000032 16.000065,39.284416 16.000065,30.999872 C16.000065,22.715648 22.715433,16.000032 30.999984,16.000032 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Checkout" transform="translate(-584.000000, -1108.000000)">
+            <g transform="translate(228.000000, 412.000000)" id="Payment-method">
+                <g transform="translate(0.000000, 625.000000)">
+                    <g id="PayPal" transform="translate(340.000000, 55.000000)">
+                        <g id="Ellipse">
+                            <use fill-opacity="0" fill="#115DFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#CCCCCC" stroke-width="1" d="M30.999984,16.500032 C22.9916741,16.500032 16.500065,22.9916916 16.500065,30.999872 C16.500065,39.0083245 22.9916263,45.500032 30.999984,45.500032 C39.0083698,45.500032 45.499936,39.0083295 45.499936,30.999872 C45.499936,22.9916867 39.008322,16.500032 30.999984,16.500032 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-928.000000, -2623.000000)">
+            <g id="Subscribe" transform="translate(229.000000, 2467.000000)">
+                <g id="Form" transform="translate(380.000000, 154.000000)">
+                    <g id="Button" transform="translate(317.000000, 0.000000)">
+                        <g id="Group-4">
+                            <path d="M31.999872,1.999936 C48.568256,1.999936 61.999744,15.431424 61.999744,31.999872 C61.999744,48.56864 48.568256,62.000192 31.999872,62.000192 C15.431424,62.000192 1.999936,48.56864 1.999936,31.999872 C1.999936,15.431424 15.431424,1.999936 31.999872,1.999936 Z" id="Ellipse" fill="#000000"></path>
+                            <path d="M37.5025351,33.000044 L23.0003,33.000044 L23.0003,31.000046 L37.5027596,31.000046 L32.0075,25.505168 L33.505,24.007856 L40.99244,31.494776 L40.4872546,31.999898 L40.99244,32.505026 L33.505,39.992252 L32.0075,38.494922 L37.5025351,33.000044 Z" id="Combined-shape-180" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

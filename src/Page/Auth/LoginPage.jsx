@@ -16,7 +16,7 @@ const LoginPage = () => {
 	] = LoginHook();
 	return (
 		<Container style={{ minHeight: "690px" }}>
-			<Row className="py-5 d-flex justify-content-center ">
+			<Row className="py-5 d-flex justify-content-center text-slate-100 ">
 				<Col sm="12" className="d-flex flex-column ">
 					<label className="mx-auto title-login">Log In </label>
 					<input

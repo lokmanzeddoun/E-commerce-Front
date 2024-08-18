@@ -1,14 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-	Navbar,
-	Container,
-	FormControl,
-	Nav,
-	NavDropdown,
-} from "react-bootstrap";
-import logo from "../../images/logo.png";
 import login from "../../images/login.png";
-import cart from "../../images/cart.png";
 import NavbarSearchHook from "./../../hook/search/navbar-search-hook";
 import GetAllUserCartHook from "./../../hook/cart/get-all-user-cart-hook";
 const NavBarLogin = () => {
@@ -34,65 +25,111 @@ const NavBarLogin = () => {
 	const [itemsNum] = GetAllUserCartHook();
 
 	return (
-		<Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
-			<Container>
-				<Navbar.Brand>
-					<a href="/">
-						<img src={logo} className="logo" />
-					</a>
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<FormControl
-						value={word}
-						onChange={OnChangeSearch}
-						type="search"
-						placeholder="Search..."
-						className="me-2 w-100 text-center"
-						aria-label="Search"
-					/>
-					<Nav className="me-auto w-25 justify-content-between">
-						{user != "" ? (
-							<NavDropdown title={user.name} id="basic-nav-dropdown">
-								{user.role === "admin" ? (
-									<NavDropdown.Item href="/admin/allproducts">
-										DashBoard
-									</NavDropdown.Item>
-								) : (
-									<NavDropdown.Item href="/user/profile">
-										User Page{" "}
-									</NavDropdown.Item>
-								)}
-								<NavDropdown.Divider />
-								<NavDropdown.Item onClick={logOut} href="/">
-									Log Out
-								</NavDropdown.Item>
-							</NavDropdown>
-						) : (
-							<Nav.Link
-								href="/login"
-								className="nav-text d-flex  mt-3  justify-content-around ml-3 "
-							>
-								<img src={login} className="login-img" alt="sfvs" />
-								<p style={{ color: "white" }}>Log In</p>
-							</Nav.Link>
-						)}
-
-						<Nav.Link
-							href="/cart"
-							className="nav-text position-relative d-flex mt-3 justify-content-center"
-							style={{ color: "white" }}
+		<div className="navbar bg-gray-800 sticky-top text-slate-100">
+			<div className="">
+				<a href="/" className="btn btn-ghost text-xl">
+					E-Commerce
+				</a>
+			</div>
+			<div className="flex-grow flex justify-center items-center">
+				<input
+					value={word}
+					onChange={OnChangeSearch}
+					type="search"
+					aria-label="Search"
+					placeholder="Search ..."
+					className="input input-bordered w-24 md:w-1/2 text-center"
+				/>
+			</div>
+			{user != "" ? (
+				<div className="flex-none">
+					<div className="dropdown dropdown-end">
+						<div
+							tabIndex={0}
+							role="button"
+							className="btn btn-ghost btn-circle"
 						>
-							<img src={cart} className="login-img" alt="sfvs" />
-							<p style={{ color: "white" }}>Cart</p>
-							<span className="position-absolute top-10 start-0 translate-middle badge rounded-pill bg-danger">
-								{itemsNum || 0}
-							</span>
-						</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
+							<div className="indicator">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									className="h-5 w-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+									/>
+								</svg>
+								<span className="badge badge-sm indicator-item -left-4">
+									{" "}
+									{itemsNum || 0}
+								</span>
+							</div>
+						</div>
+						<div
+							tabIndex={0}
+							className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+						>
+							<div className="card-body">
+								<span className="text-lg font-bold">Items</span>
+								<div className="card-actions">
+									<a className="btn btn-primary btn-block" href="/cart">
+										View cart
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="dropdown dropdown-end">
+						<div
+							tabIndex={0}
+							role="button"
+							className="btn btn-ghost btn-circle avatar"
+						>
+							<div className="w-10 rounded-full">
+								<img
+									alt="Tailwind CSS Navbar component"
+									src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+								/>
+							</div>
+						</div>
+						<ul
+							tabIndex={0}
+							className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+						>
+							{user.role !== "admin" ? (
+								<li>
+									<a className="justify-between" href="/user/profile">
+										Profile
+										<span className="badge">New</span>
+									</a>
+								</li>
+							) : (
+								<li>
+									<a className="justify-between" href="/admin/allproducts">
+										Dashboard
+									</a>
+								</li>
+							)}
+							<li>
+								<a onClick={logOut} href="/">
+									Logout
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			) : (
+				<a href="/login" className="p-2 ">
+					<img src={login} className="login-img" alt="loginImage" />
+					<p style={{ color: "white" }}>Login</p>
+				</a>
+			)}
+		</div>
 	);
 };
 

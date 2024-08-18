@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.999898,1.000032 C25.284474,1.000032 31.999848,7.715648 31.999848,15.999872 C31.999848,24.284416 25.284474,31.000032 16.999898,31.000032 C8.716036,31.000032 1.999948,24.284416 1.999948,15.999872 C1.999948,7.715648 8.716036,1.000032 16.999898,1.000032 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Checkout" transform="translate(-244.000000, -1108.000000)">
+            <g transform="translate(228.000000, 412.000000)" id="Payment-method">
+                <g transform="translate(0.000000, 625.000000)">
+                    <g id="Visa-/-Mastercard" transform="translate(0.000000, 55.000000)">
+                        <g id="Group" transform="translate(14.000000, 15.000000)">
+                            <g id="Ellipse-2">
+                                <use fill-opacity="0" fill="#115DFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <path stroke="#CCCCCC" stroke-width="1" d="M16.999898,1.500032 C8.99202937,1.500032 2.499948,7.99193938 2.499948,15.999872 C2.499948,24.0080768 8.99198154,30.500032 16.999898,30.500032 C25.0082782,30.500032 31.499848,24.0083271 31.499848,15.999872 C31.499848,7.9916891 25.0082304,1.500032 16.999898,1.500032 Z"></path>
+                            </g>
+                            <path d="M16.999904,11.000037 C19.761656,11.000037 21.999884,13.238676 21.999884,15.999876 C21.999884,18.761388 19.761656,21.000027 16.999904,21.000027 C14.238848,21.000027 11.999924,18.761388 11.999924,15.999876 C11.999924,13.238676 14.238848,11.000037 16.999904,11.000037 Z" id="Ellipse-1-" fill="#000000"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
