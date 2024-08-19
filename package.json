@@ -3,10 +3,12 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://lokmanzeddoun.github.io/ecommerce",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"lint": "eslint .",
+		"deploy": "gh-pages -d build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -44,6 +46,7 @@
 		"eslint-plugin-react": "^7.35.0",
 		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
 		"eslint-plugin-react-refresh": "^0.4.9",
+		"gh-pages": "^6.1.1",
 		"globals": "^15.9.0",
 		"postcss": "^8.4.41",
 		"tailwindcss": "^3.4.10",
