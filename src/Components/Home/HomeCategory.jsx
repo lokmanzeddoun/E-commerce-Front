@@ -9,7 +9,7 @@ const HomeCategory = () => {
 	return (
 		<Container>
 			<SubTiltle title="categories" btntitle="more" pathText="/allcategory" />
-			<Row className="my-2 d-flex justify-content-between">
+			<Row className="my-2 d-flex justify-content-between text-slate-100">
 				{loading === false ? (
 					category ? (
 						category.data.slice(0, 5).map((item, index) => {

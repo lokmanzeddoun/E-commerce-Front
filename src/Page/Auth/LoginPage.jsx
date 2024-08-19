@@ -59,8 +59,8 @@ const LoginPage = () => {
 					<button className="btn btn-neutral mx-auto mt-4" onClick={onSubmit}>
 						Login
 					</button>
-					<label className="mx-auto my-4 text-black">
-						you don&apos; t have account ?{" "}
+					<label className="mx-auto my-4 text-slate-100">
+						you don&apos; t have account {" "}
 						<Link to="/register" style={{ textDecoration: "none" }}>
 							<span style={{ cursor: "pointer" }} className="text-danger">
 								Click here

@@ -11,20 +11,18 @@ const BrandCard = ({ img, id }) => {
 			lg="2"
 			className="my-2 d-flex justify-content-center"
 		>
-			<Card
-				className="my-1"
-				style={{
-					width: "100%",
-					height: "151px",
-					borderRadius: "8px",
-					border: "none",
-					backgroundColor: "#FFFFFF",
-				}}
-			>
+			<div className="card bg-base-100 w-96 shadow-xl">
 				<Link to={`/products/brand/${id}`} style={{ textDecoration: "none" }}>
-					<Card.Img style={{ width: "100%", height: "151px" }} src={img} />
+					<figure className="px-10 pt-10">
+						<img
+							src={img}
+							alt="Shoes"
+							style={{ width: "100%", height: "151px" }}
+							className="rounded-xl"
+						/>
+					</figure>
 				</Link>
-			</Card>
+			</div>
 		</Col>
 	);
 };

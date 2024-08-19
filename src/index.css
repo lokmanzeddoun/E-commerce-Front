@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
 	margin: 0;
 	font-family: "Moderustic", sans-serif;
@@ -15,7 +14,7 @@ body {
 }
 .font {
 	font-family: "Moderustic", sans-serif;
-	background-color: #f9f9f9;
+	background-color: #1d232a;
 }
 .hieght-search {
 	height: 80vh;
@@ -35,7 +34,7 @@ body {
 	font-weight: bold;
 }
 .sub-tile {
-	color: #272727;
+	color: #ffedf5;
 	font-family: "Moderustic", sans-serif;
 	font-size: 21px;
 	font-weight: bold;
@@ -99,7 +98,7 @@ body {
 	top: 20%;
 	left: 10%;
 }
-.categoty-card-text {
+.category-card-text {
 	color: #555550;
 	font-family: "Moderustic", sans-serif;
 	font-size: 18px;
@@ -110,7 +109,6 @@ body {
 /* products card style */
 
 .card-title {
-	color: #555550;
 	font-family: "Moderustic", sans-serif;
 	font-size: 16px;
 	letter-spacing: 0;
@@ -118,7 +116,6 @@ body {
 	text-align: right;
 }
 .card-price {
-	color: #272727;
 	font-family: "Moderustic", sans-serif;
 	font-size: 21px;
 	font-weight: bold;
@@ -126,7 +123,6 @@ body {
 	line-height: 28px;
 }
 .card-currency {
-	color: #555550;
 	font-family: "Moderustic", sans-serif;
 	font-size: 18px;
 	letter-spacing: 0;
@@ -176,7 +172,7 @@ body {
 }
 .dicount-img {
 	max-height: 130px;
-	max-width: 80%;
+	width: 80%;
 }
 /* end discount */
 
