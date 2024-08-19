@@ -73,7 +73,7 @@ const UserProfile = () => {
 			<div className="user-address-card my-3 px-2">
 				<Row className="d-flex justify-content-between pt-2">
 					<Col xs="6" className="d-flex">
-						<div className="p-2">الاسم:</div>
+						<div className="p-2">Name:</div>
 						<div className="p-1 item-delete-edit">{user.name}</div>
 					</Col>
 					<Col xs="6" className="d-flex justify-content-end">
@@ -85,46 +85,46 @@ const UserProfile = () => {
 								height="17px"
 								width="15px"
 							/>
-							<p className="item-delete-edit"> تعديل</p>
+							<p className="item-delete-edit"> Update</p>
 						</div>
 					</Col>
 				</Row>
 
 				<Row className="">
 					<Col xs="12" className="d-flex">
-						<div className="p-2">رقم الهاتف:</div>
+						<div className="p-2">Phone Number :</div>
 						<div className="p-1 item-delete-edit">{user.phone}</div>
 					</Col>
 				</Row>
 				<Row className="">
 					<Col xs="12" className="d-flex">
-						<div className="p-2">الايميل:</div>
+						<div className="p-2">Email :</div>
 						<div className="p-1 item-delete-edit">{user.email}</div>
 					</Col>
 				</Row>
 				<Row className="mt-5">
 					<Col xs="10" sm="8" md="6" className="">
-						<div className="admin-content-text">تغير كملة المرور</div>
+						<div className="admin-content-text">Change Password</div>
 						<input
 							value={oldPassword}
 							onChange={onChangeOldPass}
 							type="password"
 							className="input-form d-block mt-1 px-3"
-							placeholder="ادخل كلمة المرور القديمة"
+							placeholder="Enter The Old Password"
 						/>
 						<input
 							value={newPassword}
 							onChange={onChangeNewPass}
 							type="password"
 							className="input-form d-block mt-3 px-3"
-							placeholder="ادخل كلمة المرور الجديده"
+							placeholder="Enter The New Password"
 						/>
 						<input
 							value={confirmNewPassword}
 							onChange={onChangeConfirmPass}
 							type="password"
 							className="input-form d-block mt-3 px-3"
-							placeholder="تاكيد كلمة المرور الجديدة"
+							placeholder="Confirm Password"
 						/>
 					</Col>
 				</Row>
@@ -135,7 +135,7 @@ const UserProfile = () => {
 							onClick={changePassword}
 							className="btn-save d-inline mt-2 "
 						>
-							حفظ كلمة السر
+							Save Password{" "}
 						</button>
 					</Col>
 				</Row>
