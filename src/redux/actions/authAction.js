@@ -63,7 +63,7 @@ export const getLoggedUser = () => async (dispatch) => {
 //1-foregt  passwrod 
 export const forgetPassword = (data) => async (dispatch) => {
     try {
-        const response = await useInsertData(`/api/v1/auth/forgotPasswords`, data);
+        const response = await useInsertData(`/api/v1/auth/forgotPassword`, data);
         dispatch({
             type: FOREGT_PASSWORD,
             payload: response,
