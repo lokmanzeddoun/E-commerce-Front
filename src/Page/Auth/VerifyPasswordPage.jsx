@@ -14,15 +14,17 @@ const VerifyPasswordPage = () => {
 					<label className="mx-auto title-login">
 						Enter The Code Send Into Your Email
 					</label>
-					<input
-						value={code}
-						onChange={OnChangeCode}
-						placeholder="Enter Code ..."
-						type="email"
-						className="user-input my-3 text-center mx-auto"
-					/>
+					<label className="input input-bordered flex items-center gap-2 mx-auto title-login mb-4 ">
+						<input
+							placeholder="Email"
+							value={code}
+							onChange={OnChangeCode}
+							type="text"
+							className="grow my-3 text-center mx-auto text-slate-100"
+						/>
+					</label>
 
-					<button onClick={onSubmit} className="btn-login mx-auto mt-2">
+					<button className="btn btn-neutral mx-auto mt-4" onClick={onSubmit}>
 						Confirm
 					</button>
 				</Col>
